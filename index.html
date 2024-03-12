@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<title>Gallery</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top shadow-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Chicago Institute of Art DB</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu"
+            ><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="https://www.artic.edu/artworks/117266/nightlife" class="nav-link">Night Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.artic.edu/artworks/14598/the-beach-at-sainte-adresse" class="nav-link">The Beach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.artic.edu/artworks/4796/fishing-boats-with-hucksters-bargaining-for-fish" class="nav-link">Fishing boats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.artic.edu/artworks/109780/love-of-winter" class="nav-link">Love of Winter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.artic.edu/artworks/153701/reclining-woman" class="nav-link">Reclining Women</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <section class="text-center">
+        <div class="container p-5">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <h1>Popular Paintings from Chicago Institute of Art </h1>
+                </div>
+            </div>
+        </div>
+    <!-- Container For Paintings-->
+    <div class="container">
+        <div class="gallery">
+            
+            <figure class="gallery__item gallery__item--1" id="nightlife" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/nightlife.jpg" alt="117266">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--2" id="thebeach" onclick="event.stopPropagation(); getArt(this.id, event)" >
+                <img class="gallery__img shadow-lg" src="/images/the_beach.jpg" alt="14598">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--3" id="fishingboats" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/fishing_boats.jpg" alt="4796">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--4" id="winterlove" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/winter_love.jpg" alt="109780">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--5" id="recliningwomen" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/reclining_women.jpg" alt="153701">
+            </figure>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
